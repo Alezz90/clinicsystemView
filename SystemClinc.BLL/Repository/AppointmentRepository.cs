@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using SystemClinc.BLL.Interface;
@@ -10,12 +9,11 @@ using SystemClinc.DAL.MyDbContext;
 
 namespace SystemClinc.BLL.Repository
 {
-    public class SpecializationRepository : GenaricRepository<Specialization>, ISpecialization
+    public class AppointmentRepository : GenaricRepository<Appointment>, IAppointment
     {
         private readonly ApplicationDbContext _context;
 
-        public SpecializationRepository(ApplicationDbContext context) : base(context)
-        {
+        public AppointmentRepository(ApplicationDbContext context) : base(context){
             _context = context;
         }
 
