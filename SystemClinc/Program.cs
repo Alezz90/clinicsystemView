@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using SystemClinc.DAL.MyDbContext;
+
 namespace SystemClinc
 {
     public class Program
@@ -8,6 +11,9 @@ namespace SystemClinc
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(
+                options => options.UseSqlServer(builder.Configuration.GetConnectionString("defultConnection")));
 
             var app = builder.Build();
 
