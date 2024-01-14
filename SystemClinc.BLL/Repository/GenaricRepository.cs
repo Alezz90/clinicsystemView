@@ -7,7 +7,7 @@ using SystemClinc.DAL.MyDbContext;
 
 namespace SystemClinc.BLL.Repository
 {
-    internal class GenaricRepository<T> where T : class
+    public class GenaricRepository<T> where T : class
     {
         private readonly ApplicationDbContext _context; //==> EMPTY 
 

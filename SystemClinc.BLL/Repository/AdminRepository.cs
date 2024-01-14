@@ -9,12 +9,16 @@ using SystemClinc.Model;
 
 namespace SystemClinc.BLL.Repository
 {
-    internal class AdminRepository : GenaricRepository<Admin>, IAdmin
+    public class AdminRepository : GenaricRepository<Admin>, IAdmin
     {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 719e7cc36f196e47af5202760c17dcf8b84c4434
         public AdminRepository(ApplicationDbContext context) : base(context)
         {
-
+        
         }
     }
 }
