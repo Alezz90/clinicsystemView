@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "SystemClinc.BLL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/SystemClinc.BLL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SystemClinc.BLL.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "SystemClinc.BLL/1.0.0": {
-      "type": "project",
-      "path": "../SystemClinc.BLL/SystemClinc.BLL.csproj",
-      "msbuildProject": "../SystemClinc.BLL/SystemClinc.BLL.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "SystemClinc.BLL >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\dell\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc\\SystemClinc.csproj",
-      "projectName": "SystemClinc",
-      "projectPath": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc\\SystemClinc.csproj",
+      "projectUniqueName": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\SystemClinc.BLL.csproj",
+      "projectName": "SystemClinc.BLL",
+      "projectPath": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\SystemClinc.BLL.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc\\obj\\",
+      "outputPath": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\SystemClinc.BLL.csproj": {
-              "projectPath": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\SystemClinc.BLL.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -80,9 +57,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
