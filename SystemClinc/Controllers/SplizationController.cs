@@ -5,10 +5,10 @@ namespace SystemClinc.Controllers
 {
     public class SplizationController : Controller
     {
-        private readonly ISplization _splization;
-        public SplizationController(ISplization splization)
+        private readonly ISpecialization _Specialization;
+        public SplizationController(ISpecialization Specialization)
         {
-            _splization = splization;
+            _Specialization = Specialization;
         }
 
         public IActionResult Index()

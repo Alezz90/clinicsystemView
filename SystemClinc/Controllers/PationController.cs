@@ -5,8 +5,8 @@ namespace SystemClinc.Controllers
 {
     public class PationController : Controller
     {
-        private readonly IPation _pation;
-        public PationController(IPation pation)
+        private readonly IPatient _pation;
+        public PationController(IPatient pation)
         {
             _pation = pation;
         }

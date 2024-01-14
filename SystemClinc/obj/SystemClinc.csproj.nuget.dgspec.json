@@ -1,9 +1,10 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc\\SystemClinc.csproj": {}
+    "C:\\Users\\my pc\\Desktop\\New folder\\SystemClinc\\SystemClinc.csproj": {}
   },
   "projects": {
+<<<<<<< HEAD
     "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\SystemClinc.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -12,9 +13,19 @@
         "projectPath": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\SystemClinc.BLL.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\dell\\Desktop\\CodeAcademy\\CodeAcademy\\SystemClinc\\SystemClinc.BLL\\obj\\",
+=======
+    "C:\\Users\\my pc\\Desktop\\New folder\\SystemClinc\\SystemClinc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\my pc\\Desktop\\New folder\\SystemClinc\\SystemClinc.csproj",
+        "projectName": "SystemClinc",
+        "projectPath": "C:\\Users\\my pc\\Desktop\\New folder\\SystemClinc\\SystemClinc.csproj",
+        "packagesPath": "C:\\Users\\my pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\my pc\\Desktop\\New folder\\SystemClinc\\obj\\",
+>>>>>>> a743e03800c716cacc184e1447d2e58b815c8bec
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\my pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

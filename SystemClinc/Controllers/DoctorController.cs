@@ -5,10 +5,10 @@ namespace SystemClinc.Controllers
 {
     public class DoctorController : Controller
     {
-        private readonly IDoctor _doctor;
-        public DoctorController(IDoctor doctor)
+        private readonly IAdmin _admin;
+        public DoctorController(IAdmin admin)
         {
-            _doctor = doctor;
+            _admin = admin;
         }
         public IActionResult Index()
         {
