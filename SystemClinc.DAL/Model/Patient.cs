@@ -32,6 +32,6 @@ namespace Clinic_Registration_and_Management_System.Model
         [Required(ErrorMessage = "Phone no. is required")]
         public string Phone { get; set; }
 
-        public List<Appointment> Appointments { get; set; } = new List<Appointment>();
+        public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
     }
 }
