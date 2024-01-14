@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SystemClinc.BLL.Interface;
 using SystemClinc.DAL.MyDbContext;
 
 namespace SystemClinc.BLL.Repository
 {
-    public class GenaricRepository<T> where T : class
+    public class GenaricRepository<T>:IGeneric<T> where T : class
     {
         private readonly ApplicationDbContext _context; //==> EMPTY 
 

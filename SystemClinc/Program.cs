@@ -19,6 +19,7 @@ namespace SystemClinc
             builder.Services.AddScoped<IPatient, PatientRepository>();
             builder.Services.AddScoped<IAdmin, AdminRepository>();
             builder.Services.AddScoped<IAppointment, AppointmentRepository>();
+            builder.Services.AddScoped<ISpecialization, SpecializationRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

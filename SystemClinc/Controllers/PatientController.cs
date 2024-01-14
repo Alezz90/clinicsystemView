@@ -9,24 +9,19 @@ namespace SystemClinc.Controllers
     {
         private readonly IPatient _patient;
         private readonly ISpecialization _Special;
-        public PatientController(IPatient pation,ISpecialization specialization)
+        private readonly IAppointment _appointment;
+        public PatientController(IPatient pation,ISpecialization specialization, IAppointment appointment)
         {
             _patient = pation;
             _Special = specialization;
+            _appointment = appointment;
+            
         }
         public IActionResult Index(string search)
         {
-            IEnumerable<Patient> p;
-            if (string.IsNullOrEmpty(search))
-            {
-                p = _patient.GetAll();
-            }
-            else
-            {
-                p = _patient.Search(search);
-            }
-            return View(p);
-           
+            var dep = _appointment.GetAll();
+            return View(dep);
+
         }
         public IActionResult Details()
         {
@@ -43,7 +38,7 @@ namespace SystemClinc.Controllers
             if (ModelState.IsValid)
             {
                 _patient.Create(patient);
-                return RedirectToAction("Index");
+                return View(); ;
             }
             return View();
 
