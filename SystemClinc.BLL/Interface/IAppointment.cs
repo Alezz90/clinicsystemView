@@ -7,7 +7,7 @@ using SystemClinc.Model;
 
 namespace SystemClinc.BLL.Interface
 {
-    public interface IAppointment : IGeneric<IAppointment>
+    public interface Appointment : IGeneric<Appointment>
     {
     }
 }

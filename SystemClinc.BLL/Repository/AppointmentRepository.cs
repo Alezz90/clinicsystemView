@@ -9,7 +9,7 @@ using SystemClinc.DAL.MyDbContext;
 
 namespace SystemClinc.BLL.Repository
 {
-    public class AppointmentRepository : GenaricRepository<Appointment>, IAppointment
+    public class AppointmentRepository : GenaricRepository<Clinic_Registration_and_Management_System.Model.Appointment>, Interface.Appointment
     {
         private readonly ApplicationDbContext _context;
 

@@ -9,6 +9,6 @@ namespace SystemClinc.BLL.Interface
 {
     public interface IPatient : IGeneric<Patient>
     {
-
+        IEnumerable<Patient> Search(string name);
     }
 }
