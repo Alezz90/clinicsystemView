@@ -15,6 +15,5 @@ namespace SystemClinc.BLL.Interface
         int Update(T obj);
         int Delete(T obj);
     }
-    {
-    }
+    
 }

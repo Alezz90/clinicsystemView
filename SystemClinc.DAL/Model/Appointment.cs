@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SystemClinc.Model;
 
 namespace Clinic_Registration_and_Management_System.Model
 {
@@ -29,5 +30,9 @@ namespace Clinic_Registration_and_Management_System.Model
         [ForeignKey("SpecializationID")]
         public int? SpecializationID { get; set; }
         public Specialization Specialization { get; set; }
+
+        [ForeignKey("AdminID")]
+        public int? AdminID { get; set; }
+        public Admin Admin { get; set; }
     }
 }

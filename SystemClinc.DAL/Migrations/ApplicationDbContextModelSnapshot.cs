@@ -30,6 +30,9 @@ namespace SystemClinc.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AppointmentID"), 1L, 1);
 
+                    b.Property<int?>("AdminID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Appointment_Day")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -49,6 +52,8 @@ namespace SystemClinc.DAL.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("AppointmentID");
+
+                    b.HasIndex("AdminID");
 
                     b.HasIndex("PatientID");
 
@@ -147,13 +152,19 @@ namespace SystemClinc.DAL.Migrations
 
             modelBuilder.Entity("Clinic_Registration_and_Management_System.Model.Appointment", b =>
                 {
+                    b.HasOne("SystemClinc.Model.Admin", "Admin")
+                        .WithMany("Appointments")
+                        .HasForeignKey("AdminID");
+
                     b.HasOne("Clinic_Registration_and_Management_System.Model.Patient", "Patient")
                         .WithMany("Appointments")
                         .HasForeignKey("PatientID");
 
                     b.HasOne("Clinic_Registration_and_Management_System.Model.Specialization", "Specialization")
-                        .WithMany()
+                        .WithMany("Appointments")
                         .HasForeignKey("SpecializationID");
+
+                    b.Navigation("Admin");
 
                     b.Navigation("Patient");
 
@@ -161,6 +172,16 @@ namespace SystemClinc.DAL.Migrations
                 });
 
             modelBuilder.Entity("Clinic_Registration_and_Management_System.Model.Patient", b =>
+                {
+                    b.Navigation("Appointments");
+                });
+
+            modelBuilder.Entity("Clinic_Registration_and_Management_System.Model.Specialization", b =>
+                {
+                    b.Navigation("Appointments");
+                });
+
+            modelBuilder.Entity("SystemClinc.Model.Admin", b =>
                 {
                     b.Navigation("Appointments");
                 });

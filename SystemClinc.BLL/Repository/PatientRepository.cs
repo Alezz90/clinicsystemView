@@ -10,6 +10,7 @@ using SystemClinc.DAL.MyDbContext;
 
 namespace SystemClinc.BLL.Repository
 {
+
     public class PatientRepository:GenaricRepository<Patient>,IPatient
     {
         private readonly ApplicationDbContext _context;

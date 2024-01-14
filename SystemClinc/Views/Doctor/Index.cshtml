@@ -1,5 +1,5 @@
 ﻿
-@model List<Admin>
+@model List<Appointment>
 
 
 <h2> Appointment List </h2>
@@ -34,9 +34,10 @@
             {
                 <tr>
 
-                    <td> @item.Name </td>
-                    <td> @item.Specialization </td>
-                    <td> @item.Date </td>
+                    <td> @item.Appointment_Day </td>
+                    <td> @item.Appointment_Time </td>
+                    <td> @item.Appointment_Status </td>
+                    <td> @item.Patient.FName</td>
 
                     <td>
                         <input type="submit" class="btn btn-primary" />
@@ -50,7 +51,7 @@
                     </td>
 
 
-                    <partial name="ButtonPartial" model="@item.Id" />
+                    <partial name="ButtonPartial" model="@item.AppointmentID" />
                 </tr>
             }
 

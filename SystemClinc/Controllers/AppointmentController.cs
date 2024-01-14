@@ -5,8 +5,8 @@ namespace SystemClinc.Controllers
 {
     public class AppointmentController : Controller
     { 
-        private readonly Appointment _Appointment;
-        public AppointmentController(Appointment appointment) {
+        private readonly IAppointment _Appointment;
+        public AppointmentController(IAppointment appointment) {
             _Appointment = appointment;
 
         }

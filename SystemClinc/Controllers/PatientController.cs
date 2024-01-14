@@ -1,4 +1,5 @@
-﻿using Clinic_Registration_and_Management_System.Model;
+﻿
+using Clinic_Registration_and_Management_System.Model;
 using Microsoft.AspNetCore.Mvc;
 using SystemClinc.BLL.Interface;
 

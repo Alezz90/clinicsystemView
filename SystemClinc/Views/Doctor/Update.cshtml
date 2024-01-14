@@ -1,4 +1,4 @@
-﻿@model Employee
+﻿@model Appointment
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,8 +14,8 @@
 
     <partial name="PartialView/CreateUpdatePartial" />
 
-    <label asp-for="Doctor" class="form-label"></label>
-    <select class="form-control" asp-for="DoctorId" asp-items="@Doctors">
+    <label asp-for="Specialization" class="form-label"></label>
+    <select class="form-control" asp-for="SpecializationID" asp-items="@Doctors">
         <options value="@null">--Select Doctor--</options>
 
     </select>

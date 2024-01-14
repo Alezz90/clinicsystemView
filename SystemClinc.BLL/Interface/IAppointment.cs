@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Clinic_Registration_and_Management_System.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,10 @@ using SystemClinc.Model;
 
 namespace SystemClinc.BLL.Interface
 {
-    public interface Appointment : IGeneric<Appointment>
+
+    public interface IAppointment : IGeneric<Appointment>
     {
+
     }
+
 }

@@ -11,7 +11,6 @@ namespace SystemClinc.BLL.Repository
 {
     public class AdminRepository : GenaricRepository<Admin>, IAdmin
     {
-        
         public AdminRepository(ApplicationDbContext context) : base(context)
         {
         

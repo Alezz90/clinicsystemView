@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using SystemClinc.BLL.Interface;
+using SystemClinc.BLL.Repository;
 using SystemClinc.DAL.MyDbContext;
 
 namespace SystemClinc
@@ -14,7 +16,9 @@ namespace SystemClinc
 
             builder.Services.AddDbContext<ApplicationDbContext>(
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("defultConnection")));
-
+            builder.Services.AddScoped<IPatient, PatientRepository>();
+            builder.Services.AddScoped<IAdmin, AdminRepository>();
+            builder.Services.AddScoped<IAppointment, AppointmentRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
