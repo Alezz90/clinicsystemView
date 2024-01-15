@@ -20,5 +20,6 @@ namespace SystemClinc.DAL.MyDbContext
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Specialization>? Specialization { get; set; }
+  
     }
 }

@@ -6,6 +6,7 @@
     var Special = new SelectList(ViewBag.Special, "SpecializationID", "SpecializationName");
 }
 
+
 <label asp-for="SpecializationID" class="form-label"></label>
 <select class="form-control" asp-for="SpecializationID" asp-items="@Special">
     <options value="@null">--Select Department--</options>

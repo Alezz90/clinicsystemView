@@ -7,14 +7,9 @@
 <h2> Appointment List </h2>
 <div class="row   mt-4 w-75">
 
-    <div>
-        <label class="form-control" > @ViewBag.LoggedInUserName!</label>
+    <div class="text-center">
+        <h3 class="form-control" >wlcome @ViewBag.LoggedInUserName!</h3>
     </div>
-    <form class="d-flex justify-content-center align-items-center" asp-action="Index">
-        <input type="text" name="search" class="form-control  " placeholder="Enter Search Value" />
-        <input type="submit" value="Search" class="btn btn-success " />
-    </form>
-
 
 </div>
 <div>
@@ -30,7 +25,6 @@
                 <td> Appointment_Day </td>
                 <td> Appointment_Time </td>
                 <td> Appointment_Status </td>
-                <td> Patient.FName </td>
 
             </tr>
         </thead>
@@ -42,12 +36,7 @@
                     <td> @item.Appointment_Day </td>
                     <td> @item.Appointment_Time </td>
                     <td> @item.Appointment_Status </td>
-                    <td> @item.AppointmentID</td>
 
-                    
-
-
-                  
                 </tr>
             }
 
@@ -57,7 +46,7 @@
 else
 {
     <div class="card bg-dark text-light">
-        <h2>  Appointment Available </h2>
+        <h2> No Appointment Available </h2>
     </div>
 }
 

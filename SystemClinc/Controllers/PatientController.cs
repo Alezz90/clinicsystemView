@@ -44,7 +44,8 @@ namespace SystemClinc.Controllers
             if (ModelState.IsValid)
             {
                 _patient.Create(patient);
-                return View(); ;
+
+                return View("Index","Home"); 
             }
             return View();
 
