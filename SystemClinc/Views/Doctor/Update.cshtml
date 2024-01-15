@@ -1,0 +1,30 @@
+﻿@model Appointment
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var Doctors = new SelectList(ViewBag.Doctors, "Id", "Name");
+    
+}
+
+<h2> Update Apointment </h2>
+
+<form asp-action="Update">
+
+    <partial name="PartialView/CreateUpdatePartial" />
+
+    <label asp-for="Specialization" class="form-label"></label>
+    <select class="form-control" asp-for="SpecializationID" asp-items="@Doctors">
+        <options value="@null">--Select Doctor--</options>
+
+    </select>
+    <input type="submit" class="btn btn-primary" />
+    | <a asp-action="Index" class="btn btn-dark"> Back to List</a>
+
+</form>
+
+@section ClientSideValidation
+{
+    <partial name="_ValidationScriptsPartial" />
+}
