@@ -9,77 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SystemClinc.PL
 build_property.RootNamespace = SystemClinc.PL
-build_property.ProjectDir = C:\Users\dell\Desktop\CodeAcademy\CodeAcademy\SystemClinc\SystemClinc\
+build_property.ProjectDir = C:\Users\my pc\Desktop\New folder (3)\SystemClinc\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dell\Desktop\CodeAcademy\CodeAcademy\SystemClinc\SystemClinc
+build_property.MSBuildProjectDirectory = C:\Users\my pc\Desktop\New folder (3)\SystemClinc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Doctor/Create.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Appointment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Doctor/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Doctor/Delete.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Doctor/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Doctor/Details.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Doctor/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Doctor/Index.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Doctor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Doctor/PartialView/CreateUpdatePartial.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Doctor/PartialView/CreateUpdatePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFBhcnRpYWxWaWV3XENyZWF0ZVVwZGF0ZVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Doctor/PartialView/DetailDeletePartial.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Doctor/PartialView/DetailDeletePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFBhcnRpYWxWaWV3XERldGFpbERlbGV0ZVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Doctor/Update.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Doctor/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Home/Index.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Home/Privacy.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Patient/Create.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Patient/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Patient/Index.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Patient/_Appo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxfQXBwby5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Shared/Error.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Shared/_Appo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BcHBvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/_ViewImports.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/_ViewStart.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/CodeAcademy/CodeAcademy/SystemClinc/SystemClinc/Views/Shared/_Layout.cshtml]
+[C:/Users/my pc/Desktop/New folder (3)/SystemClinc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3k1smzrocd

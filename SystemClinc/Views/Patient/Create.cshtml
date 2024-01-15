@@ -2,7 +2,7 @@
 @model Patient
 
 
-<h2> Book Appointment </h2>
+<h2>  LogIn </h2>
 
 <form asp-action="Create">
     <div asp-validation-summary="All"></div>
@@ -30,10 +30,10 @@
    
     <div>
         <input type="submit" class="btn btn-primary" />
-      
+        | <a asp-action="Index" asp-controller="Appointment" class="btn btn-dark">Back</a>
     </div>
 
-    <partial name="_Appo"></partial>
+    @* <partial name="_Appo"></partial> *@
 
 </form>
   | <a asp-action="Index" class="btn btn-dark">Back</a>
