@@ -8,12 +8,12 @@
 <div class="row   mt-4 w-75">
 
     <div class="text-center">
-        <h3 class="form-control" >welcome @ViewBag.LoggedInUserName!</h3>
+        <h3 class="form-control" >welcome @ViewBag.LoggedInUserName</h3>
     </div>
 
 </div>
 <div>
-    <a asp-action="Create" class="btn btn-dark"> Book Appoinyemnt</a>
+    <a asp-action="Create" asp-controller="Appointment" class="btn btn-dark"> Book Appoinyemnt</a>
 </div>
 
 @if (Model.Count() > 0)

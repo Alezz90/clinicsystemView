@@ -28,11 +28,9 @@ namespace Clinic_Registration_and_Management_System.Model
         public Patient Patient { get; set; }
 
         [ForeignKey("SpecializationID")]
-        public int? SpecializationID { get; set; }
+        public int SpecializationID { get; set; }
+        
         public Specialization Specialization { get; set; }
 
-        [ForeignKey("AdminID")]
-        public int? AdminID { get; set; }
-        public Admin Admin { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Clinic_Registration_and_Management_System.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,9 +35,28 @@ namespace SystemClinc.BLL.Repository
         public T Get(int id)
            => _context.Set<T>().Find(id);
 
-       
+       /*if(typeof(T) == typeof(Employee))
+            {
+               return (IEnumerable<T>)_context.Employees.Include(e=>e.Department).ToList();
+                   
+            }
+            else { 
+                  return  _context.Set<T>().ToList();
+            
+            }*/
         public IEnumerable<T> GetAll()
-             => _context.Set<T>().ToList();
+        {
+            if (typeof(T) == typeof(Appointment))
+            {
+                return (IEnumerable<T>)_context.Appointments.Include(e =>e.Specialization).ToList();
+            }
+            else
+            {
+                return _context.Set<T>().ToList();
+
+            }
+        }
+             //=> _context.Set<T>().ToList();
 
 
         public int Update(T item)
