@@ -1,30 +1,25 @@
 ﻿@model Appointment
 
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    var Doctors = new SelectList(ViewBag.Doctors, "Id", "Name");
-    
-}
-
 <h2> Update Apointment </h2>
 
 <form asp-action="Update">
+   
 
-    <partial name="PartialView/CreateUpdatePartial" />
+    <label asp-for="Appointment_Time" class="form-Label"></label>
+    <input asp-for="Appointment_Time" class="form-control" />
+    <span asp-validation-for="Appointment_Time" class="text-danger"></span>
 
-    <label asp-for="Specialization" class="form-label"></label>
-    <select class="form-control" asp-for="SpecializationID" asp-items="@Doctors">
-        <options value="@null">--Select Doctor--</options>
+    <label asp-for="Appointment_Day" class="form-Label"></label>
+    <input asp-for="Appointment_Day" class="form-control" />
+    <span asp-validation-for="Appointment_Day" class="text-danger"></span>
 
-    </select>
-    <input type="submit" class="btn btn-primary" />
+    <label asp-for="Appointment_Status" class="form-Label"></label>
+    <input asp-for="Appointment_Status" class="form-control" />
+    <span asp-validation-for="Appointment_Status" class="text-danger"></span>
+
+
+    <a asp-action="Index" class="btn btn-dark"> submit</a>
     | <a asp-action="Index" class="btn btn-dark"> Back to List</a>
 
 </form>
 
-@section ClientSideValidation
-{
-    <partial name="_ValidationScriptsPartial" />
-}

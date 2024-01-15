@@ -18,10 +18,7 @@ namespace SystemClinc.BLL.Repository
             _context = context;
 
         }
-        public IEnumerable<Patient> Search(string name)
-        {
-            var fname = _context.Patients.Where(w => w.FName.ToLower().Contains(name.ToLower())).ToList();
-            return fname;
-        }
+       
+
     }
 }

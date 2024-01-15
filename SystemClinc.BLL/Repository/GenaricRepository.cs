@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Clinic_Registration_and_Management_System.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace SystemClinc.BLL.Repository
         {
             _context = context;
         }
-
+        
 
         public int Create(T item)
         {
@@ -33,15 +34,13 @@ namespace SystemClinc.BLL.Repository
         public T Get(int id)
            => _context.Set<T>().Find(id);
 
-
-
+       
         public IEnumerable<T> GetAll()
              => _context.Set<T>().ToList();
 
 
         public int Update(T item)
         {
-
             _context.Set<T>().Update(item);
             return _context.SaveChanges();
         }

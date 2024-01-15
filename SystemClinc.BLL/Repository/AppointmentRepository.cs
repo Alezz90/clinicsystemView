@@ -18,5 +18,13 @@ namespace SystemClinc.BLL.Repository
         public AppointmentRepository(ApplicationDbContext context) : base(context){
             _context = context;
         }
+        public IEnumerable<Appointment> Search(string? name, int? id)
+        {
+            var fname = _context.Appointments.Where(w => w.PatientID==id).ToList();
+            return fname;
+        }
+
+        
+        
     }
 }

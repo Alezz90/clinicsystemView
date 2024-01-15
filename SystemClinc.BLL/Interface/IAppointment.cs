@@ -11,7 +11,8 @@ namespace SystemClinc.BLL.Interface
 
     public interface IAppointment : IGeneric<Appointment>
     {
-
+        IEnumerable<Appointment> Search(string? name, int? id);
+        // 
     }
 
 }

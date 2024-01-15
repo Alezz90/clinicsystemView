@@ -17,9 +17,15 @@ namespace SystemClinc.Controllers
             _appointment = appointment;
             
         }
-        public IActionResult Index(string search)
+        public IActionResult Index()
         {
-            var dep = _appointment.GetAll();
+            string loggedInUserName = TempData["LoggedInUserName"] as string;
+
+            ViewBag.LoggedInUserName = loggedInUserName;
+
+            int USERID = (int)TempData["LoggedInUserId"];
+
+            var dep = _appointment.Search("ss",USERID);
             return View(dep);
 
         }

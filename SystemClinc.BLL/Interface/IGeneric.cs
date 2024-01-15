@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Clinic_Registration_and_Management_System.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace SystemClinc.BLL.Interface
     {
         IEnumerable<T> GetAll();
         T Get(int id);
-        // 
+       
         int Create(T obj);
         int Update(T obj);
         int Delete(T obj);

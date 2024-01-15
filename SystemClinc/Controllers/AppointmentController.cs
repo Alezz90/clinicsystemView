@@ -12,6 +12,11 @@ namespace SystemClinc.Controllers
         }
         public IActionResult Index()
         {
+            int USERID = (int)TempData["LoggedInUserId"];
+
+            ViewBag.LoggedInUserName = USERID;
+
+            
             return View();
         }
     }
