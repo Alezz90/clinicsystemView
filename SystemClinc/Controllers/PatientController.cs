@@ -43,9 +43,15 @@ namespace SystemClinc.Controllers
         {
             if (ModelState.IsValid)
             {
+                var persoName = patient.FName;
+                int personID = patient.PatientID;
+
+                TempData["LoggedInUserName"] = persoName;
+                TempData["LoggedInUserId"] = personID;
+
                 _patient.Create(patient);
 
-                return View("Index","Home"); 
+                return RedirectToAction("Index"); 
             }
             return View();
 

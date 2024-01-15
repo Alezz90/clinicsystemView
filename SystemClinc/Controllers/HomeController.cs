@@ -10,12 +10,12 @@ namespace SystemClinc.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IPatient _patient;
+      
         private readonly ApplicationDbContext _context;
 
-        public HomeController(IPatient patien, ApplicationDbContext context)
+        public HomeController( ApplicationDbContext context)
         {
-            _patient = patien;
+           
             _context = context;
         }
 
@@ -47,13 +47,6 @@ namespace SystemClinc.Controllers
                 return View("Index");
             }
         }
-
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
